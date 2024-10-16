@@ -1,0 +1,136 @@
+*{box-sizing: border-box; margin: 0;padding: 0;}
+
+body{
+    font-family: "Inter";
+    color: #424A59;
+}
+
+.main{
+    background-color: #fff;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.outer{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 0.1rem;
+    margin-top: 1rem;
+}
+
+.header{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.institute{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+p{
+    font-size: 0.9rem;
+}
+
+span{
+    border-bottom: 4px solid gray;
+}
+
+.grid{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:1.2rem;
+}
+
+.span-2{
+    grid-column: span 4;
+}
+
+.span-4{
+    grid-column: span 8;
+}
+
+@media (max-width:768px) {
+    .span-2,.span-4{
+        grid-column: span 6;
+    } 
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .outer{
+        width: 80%;
+    }
+}
+
+@media (max-width:520px) {
+    .span-2,.span-4{
+        grid-column: span 12;
+    } 
+}
+
+.grid-col-skills{
+    grid-row: span 2;
+}
+.grid-col-about{
+    max-width: 500px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.max-width-col{
+    width: 100%;
+    max-width: 200px;
+}
+
+.flex>a,p{
+    font-size: 0.9rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.grid-cols-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0.5rem;
+}
+
+.grid-cols-2>h5{
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width:520px) {
+    .grid-cols-2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
